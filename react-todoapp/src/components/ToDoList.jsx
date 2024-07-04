@@ -1,13 +1,8 @@
 import React from 'react'
 import ToDoCard from "./ToDoCard";
 
-export default function ToDoList() {
-  let todos = [
-    'Work out',
-    'React course',
-    'EVM course',
-    'German'
-  ]
+export default function ToDoList(props) {
+  const {todos} = props
   return (
     <ul className='main'>
       {todos.map((todo, index) => {
